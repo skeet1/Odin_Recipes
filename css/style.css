@@ -185,6 +185,15 @@ footer {
     text-transform: capitalize;
     letter-spacing: 4px;
 }
+
+footer p {
+    background: linear-gradient(to right, #330dfd, #350cbf, #37acbf, #37bcbf, #3e24c7, #3f5cba, #3f99ba, #2f9c80, #2f8242, #62996f, #73945a, #788260, #fad);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+
 footer span {
     font-weight: bold;
     text-transform: uppercase;
