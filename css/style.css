@@ -29,6 +29,11 @@
     }
 }
 
+::selection {
+    background-color: rgb(51 13 253 / 70%);
+    color: white
+}
+
 /* End Golbal Rules */
 
 /* Header Rules */
@@ -43,6 +48,31 @@
     padding: 30px;
     height: 100px;
     text-align: center;
+}
+
+.header h1 a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    transition: .9s ease-in all;
+    background: linear-gradient(to right, #330dfd, #350cbf, #37acbf, #37bcbf, #3e24c7, #3f5cba, #3f99ba, #2f9c80, #2f8242, #62996f, #73945a, #788260, #fad);
+    background-size: 400%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 400%;
+    }
+}
+
+.header h1 a:hover {
+    color: #330dfd;
 }
 
 header {
@@ -84,6 +114,7 @@ header button {
     border: none;
     border-radius: 20px 0px;
     color: black;
+    cursor: pointer;
 }
 
 header button:hover {
