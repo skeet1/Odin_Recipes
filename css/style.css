@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -172,8 +173,17 @@ header button {
     cursor: pointer;
 }
 
+header button a {
+    text-decoration: none;
+    color: black;
+    transition: 0.7s ease all;
+}
+
 header button:hover {
     box-shadow: inset 300px 0px 0px #85600A;
+}
+
+header button:hover a {
     color: white;
 }
 
